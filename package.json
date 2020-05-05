@@ -1,0 +1,8 @@
+{
+    "name": "safespace",
+    "version": "0.0.1",
+    "dependencies": {
+        "alex": "^8.1.1",
+        "telegraf": "^3.38.0"
+    }
+}
