@@ -1,0 +1,14 @@
+service: safespace-telegram-bot
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 128
+  environment:
+    BOT_TOKEN: ${file(./env.yml):BOT_TOKEN, ''}
+
+functions:
+  bot:
+    handler: bot.handler
+    events:
+      - http: POST /webhook
